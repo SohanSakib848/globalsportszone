@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsZone - Events</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="events.css">
+    <style>
+        /* Add your dark mode styles here */
+       
+    </style>
+</head>
+<body>
+
+<header class="bg-dark text-white py-4">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-md-4">
+                <div class="logo d-flex align-items-left">
+                    <a href="www.html">
+                        <img src="logo.jpg" alt="Your Logo" class="mr-2" style="max-height: 50px;">
+                    </a>
+                    <h1 class="text-warning"><a href="www.html" class="text-white text-decoration-none"></a></h1>
+                </div>
+            </div>
+            <div class="col-md-8 d-flex justify-content-end">
+                <div class="top-right d-flex align-items-center">
+                    <input type="text" placeholder="Search" class="form-control mr-2 search-bar">
+                    <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                        <div class="toggle-ball"></div>
+                    </div>
+                    <script src="script.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a href="www.html" class="nav-link text-white">Home</a></li>
+            <li class="nav-item"><a href="featured.html" class="nav-link text-white">Featured</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Sport</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Statistics</a></li>
+            <li class="nav-item"><a href="interesting.html" class="nav-link text-white">Interesting Facts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Quizzes</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link text-white">Upcoming Events</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Recent live score</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container my-4">
+    <section class="events-section">
+        <h2 class="text-center mb-4">Upcoming Events and Fixtures</h2>
+
+        <!-- Sport Selection Dropdown -->
+        <div class="form-group text-center">
+            <label for="sportSelection">Choose a Sport:</label>
+            <select class="form-control" id="sportSelection" onchange="showSchedule()">
+                <option value="football">Football</option>
+                <option value="cricket">Cricket</option>
+                <option value="basketball">Basketball</option>
+                <option value="tennis">Tennis</option>
+                <option value="baseball">Baseball</option>
+                <option value="rugby">Rugby</option>
+            </select>
+        </div>
+
+        <!-- Schedule Table -->
+        <div class="table-responsive schedule-table" id="footballSchedule">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr class="bg-primary text-white">
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populate with football schedule data -->
+                    <tr>
+                        <td class="bg-success">Euro 2024</td>
+                        <td class="bg-warning">June 14 - July 7</td>
+                        <td class="bg-info"> Germany</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-success">Copa América 2024</td>
+                        <td class="bg-warning">June 14 - July 14</td>
+                        <td class="bg-info">Ecuador</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-success">African Cup of Nations 2023</td>
+                        <td class="bg-warning">January 13 - February 11</td>
+                        <td class="bg-info">Ivory Coast</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Repeat the schedule table structure for other sports -->
+
+    </section>
+</main>
+
+<section class="you-may-like">
+    <div class="container">
+        <h2 class="text-center mb-4">You May Like</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://images.indianexpress.com/2022/09/india-vs-south-africa.jpeg" class="card-img-top" alt="Match Image">
+                <div class="card-body">
+                    <h5 class="card-title">Cricket Match in India</h5>
+                    <p class="card-text">Shreyas Iyer and Sai Sudharsan both slammed 50s to guide India past the target of 117 runs in the first ODI against South Africa at Johannesburg.</p>
+                    <a href="vr.html" class="btn btn-dark">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://img.etimg.com/thumb/msid-104669881,width-1200,height-900,resizemode-4,imgsize-54500/bangladesh-vs-south-africa-live-score-updates-icc-cricket-world-cup-23rd-odi-ban-vs-sa-match-score-today-24-october-2023.jpg" alt="Your Logo" class="mr-2" style="max-height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">India vs South Africa 1st ODI</h5>
+                    <p class="card-text">Under-19 Asia Cup 2023 Final, UAE vs Bangladesh Highlights: Bangladesh thrashed UAE by 195 runs at Dubai International Cricket Stadium on Sunday </p>
+                    <a href="tf.html" class="btn btn-dark">Read More</a>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p>Email: sakibsohan848@gmail.com</p>
+                    <p>Phone: +8801521574515</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="social">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ehsanulhaque.sohan/" target="_blank"><img src="https://www.freeiconspng.com/uploads/facebook-logo-3.png" alt="Facebook" class="img-fluid"></a>
+                        <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" class="img-fluid"></a>
+                        <a href="#" target="_blank"><img src="https://w7.pngwing.com/pngs/722/1011/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text-thumbnail.png" alt="Instagram" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="about">
+                    <h2>About</h2>
+                    <p>DriveAway, we are more than just a sports news platform; we are a community of passionate fans.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function toggleDarkMode() {
+        // Add your dark mode toggle logic here
+    }
+
+    function showSchedule() {
+        // Hide all schedule tables
+        document.querySelectorAll('.schedule-table').forEach(function (element) {
+            element.style.display = 'none';
+        });
+
+        // Show the selected schedule table
+        var selectedSport = document.getElementById('sportSelection').value;
+        var selectedSchedule = document.getElementById(selectedSport + 'Schedule');
+        if (selectedSchedule) {
+            selectedSchedule.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

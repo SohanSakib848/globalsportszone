@@ -1,0 +1,132 @@
+nav.navbar {
+    background-image: linear-gradient(#0b626c 13%, rgb(11, 104, 96) 40%, hwb(177 3% 61%) 86%);
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 -2px 0 #0b18a6;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px rgb(20, 20, 20), 0 4px 12px rgb(10, 10, 10);
+    height: 60px; /* Adjust the height as needed */
+}
+
+nav.navbar a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1ch;
+    font-size: 1rem; /* Adjust the font size */
+}
+
+.navbar a:hover {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.navbar .nav-item:not(:first-of-type) {
+    border-left: 1px solid rgb(229, 219, 219);
+}
+
+.navbar .nav-item:not(:last-of-type) {
+    border-right: 0.1rem solid black;
+}
+
+.navbar .nav-item.active {
+    color: var(--primary);
+    text-shadow: 0 0 3px hsla(260, 100%, 70%, 0.7);
+}
+
+.navbar .nav-item:hover > .icon .subicon {
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    top: -16px;
+    right: -16px;
+    border-color: white;
+}
+
+.navbar .nav-item a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1ch;
+}
+
+.navbar .nav-item .icon {
+    padding: 1ch;
+    position: relative;
+}
+
+.navbar .nav-item .icon .subicon {
+    text-shadow: none;
+    transition: all 40ms ease;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background: red;
+    color: white;
+    box-shadow: 0 0 4px rgba(41, 41, 41, 0.405);
+    width: 18px;
+    height: 18px;
+    border-radius: 14px;
+    font-size: 0.7em;
+    font-weight: 700;
+    display: inline-grid;
+    place-items: center;
+    border: 2px solid mix(white, red);
+}
+
+.navbar .nav-item .icon > svg {
+    max-width: 16px;
+}
+.just-in{
+    width:600px;
+    height: 310px;
+    margin-top: 340px;
+}
+.trending{
+    width:600px;
+    height:315px;
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 3px 20px 15px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.slider-container .slider-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slider-container img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto;
+    border-radius: 3px;
+}
+
+.slider-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .details-message {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        background-color: #afb4b9;
+        padding: 8px 12px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        font-size: 14px;
+        
+        cursor: pointer;
+    }
+    
+    .slider-list li:hover .details-message {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    

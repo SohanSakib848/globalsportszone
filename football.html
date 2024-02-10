@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="sports.css"> <!-- Add a football-specific stylesheet -->
+    <style>
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+main {
+    flex: 1;
+}
+
+.footer-container {
+    width: 100%;
+    margin-top: auto;
+}
+.custom-sidebar {
+    max-width: 1280px;
+    width: 100%;
+}
+.football-container {
+    width: 100%;
+    padding: 0 20px; /* Adjust the padding as needed */
+}
+
+    </style>
+<body>
+
+    <header class="bg-dark text-white py-4">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-4">
+                    <div class="logo d-flex align-items-left">
+                        <a href="www.html">
+                            <img src="logo.jpg" alt="Your Logo" class="mr-2" style="max-height: 50px;">
+                        </a>
+                        <h1 class="text-warning"></h1>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 d-flex justify-content-end">
+                    <div class="top-right d-flex align-items-center">
+                        <input type="text" placeholder="Search" class="form-control mr-2 search-bar">
+                        <body>
+                            <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                                <div class="toggle-ball"></div>
+                            </div>
+                            <script src="script.js"></script>
+                        </body>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="www.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="featured.html" class="nav-link text-white">Featured</a></li>
+                <li class="nav-item"><a href="sports.html" class="nav-link text-white">Sport</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Statistics</a></li>
+                <li class="nav-item"><a href="interesting.html" class="nav-link text-white">Interesting Facts</a></li>
+                <li class="nav-item"><a href="quiz.html" class="nav-link text-white">Quizzes</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link text-white">Upcoming Events</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Teams & Leagues</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <div class="row">
+            <section class="col-md-8">
+                <div class="football-container bg-dark text-white p-4">
+                    <h2 class="text-center text-primary">Football News and Articles</h2>
+                    <div class="row">
+                        <!-- Football News/Article 1 -->
+                        <div class="col-md-6 mb-3">
+                            <div class="football-item bg-dark text-white p-3 rounded">
+                                <img src="path_to_image/football_news1.jpg" alt="Football News 1" class="img-fluid rounded mb-2">
+                                <h4>Exciting Football Match Recap</h4>
+                                <p class="text-white">A thrilling match between two top teams. Read the highlights and analysis.</p>
+                                <a href="#" class="btn btn-link text-blue">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Repeat the structure for more news/articles -->
+                        <!-- Football News/Article 2 -->
+                        <div class="col-md-6 mb-3">
+                            <div class="football-item bg-dark text-white p-3 rounded">
+                                <img src="path_to_image/football_news2.jpg" alt="Football News 2" class="img-fluid rounded mb-2">
+                                <h4>Interview with Star Football Player</h4>
+                                <p class="text-white">Exclusive interview with a renowned football player. Insights into their career and achievements.</p>
+                                <a href="#" class="btn btn-link text-blue">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="football-item bg-dark text-white p-3 rounded">
+                                <img src="path_to_image/football_news1.jpg" alt="Football News 1" class="img-fluid rounded mb-2">
+                                <h4>Exciting Football Match Recap</h4>
+                                <p class="text-white">A thrilling match between two top teams. Read the highlights and analysis.</p>
+                                <a href="#" class="btn btn-link text-blue">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="football-item bg-dark text-white p-3 rounded">
+                                <img src="path_to_image/football_news1.jpg" alt="Football News 1" class="img-fluid rounded mb-2">
+                                <h4>Exciting Football Match Recap</h4>
+                                <p class="text-white">A thrilling match between two top teams. Read the highlights and analysis.</p>
+                                <a href="#" class="btn btn-link text-blue">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="football-item bg-dark text-white p-3 rounded">
+                                <img src="path_to_image/football_news1.jpg" alt="Football News 1" class="img-fluid rounded mb-2">
+                                <h4>Exciting Football Match Recap</h4>
+                                <p class="text-white">A thrilling match between two top teams. Read the highlights and analysis.</p>
+                                <a href="#" class="btn btn-link text-blue">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="football-item bg-dark text-white p-3 rounded">
+                                <img src="path_to_image/football_news1.jpg" alt="Football News 1" class="img-fluid rounded mb-2">
+                                <h4>Exciting Football Match Recap</h4>
+                                <p class="text-white">A thrilling match between two top teams. Read the highlights and analysis.</p>
+                                <a href="#" class="btn btn-link text-blue">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Continue with more news/articles -->
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-4">
+                <div class="top-10-articles bg-dark text-white p-3 rounded mb-3">
+                    <h2 class="text-center text-primary top-10-heading" style="color: #FFFF00 !important;">Top 10 Sports Article</h2>
+                    <ul class="list-unstyled">
+                        <!-- Article 1 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article1.jpg" alt="Article 1" class="article-image">
+                                <a href="#" class="text-white">Article 1</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                        </li>
+                        <!-- Article 2 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article2.jpg" alt="Article 2" class="article-image">
+                                <a href="#" class="text-white">Article 2</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                        </li>
+                        <!-- Article 3 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article3.jpg" alt="Article 3" class="article-image">
+                                <a href="#" class="text-white">Article 3</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                        </li>
+                        <!-- Article 4 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article4.jpg" alt="Article 4" class="article-image">
+                                <a href="#" class="text-white">Article 4</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                        </li>
+                        <!-- Article 5 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article5.jpg" alt="Article 5" class="article-image">
+                                <a href="#" class="text-white">Article 5</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                        </li>
+                        <!-- Article 6 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article6.jpg" alt="Article 6" class="article-image">
+                                <a href="#" class="text-white">Article 6</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                        </li>
+                        <!-- Article 7 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article7.jpg" alt="Article 7" class="article-image">
+                                <a href="#" class="text-white">Article 7</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                        </li>
+                        <!-- Article 8 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article8.jpg" alt="Article 8" class="article-image">
+                                <a href="#" class="text-white">Article 8</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                        </li>
+                        <!-- Article 9 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article9.jpg" alt="Article 9" class="article-image">
+                                <a href="#" class="text-white">Article 9</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                        </li>
+                        <!-- Article 10 -->
+                        <li>
+                            <div class="article-item">
+                                <img src="path_to_image/article10.jpg" alt="Article 10" class="article-image">
+                                <a href="#" class="text-white">Article 10</a>
+                                <a href="#" class="read-more-text">Read More</a>
+                            </div>
+                    
+        </div>
+        </div>
+    </main>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact">
+                        <h2>Contact</h2>
+                        <p>Email: sakibsohan848@gmail.com</p>
+                        <p>Phone: +8801521574515</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social">
+                        <h2>Follow Us</h2>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/ehsanulhaque.sohan/" target="_blank"><img src="https://www.freeiconspng.com/uploads/facebook-logo-3.png" alt="Facebook" class="img-fluid"></a>
+                            <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" class="img-fluid"></a>
+                            <a href="#" target="_blank"><img src="https://w7.pngwing.com/pngs/722/1011/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text-thumbnail.png" alt="Instagram" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about">
+                        <h2>About</h2>
+                        <p>DriveAway, we are more than just a sports news platform; we are a community of passionate fans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Function to toggle between dark and light mode
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+
+            // Save the current mode to local storage
+            var isDarkMode = body.classList.contains("dark-mode");
+            localStorage.setItem("darkMode", isDarkMode);
+        }
+
+        // Check local storage for the user's preferred mode on page load
+        window.onload = function () {
+            var storedDarkMode = localStorage.getItem("darkMode");
+            if (storedDarkMode === "true") {
+                document.body.classList.add("dark-mode");
+            }
+        };
+    </script>
+</body>
+
+</html>

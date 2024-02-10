@@ -1,0 +1,492 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsZone - Your Sports News Platform</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+
+
+#content-wrapper {
+  width: 1280px;
+  min-height: 630px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#main {
+  float: left;
+  width: 760px;
+  min-height: 630px;
+  margin: 0 20px 0 0;
+}
+
+#headlines {
+  width: 780px;
+  min-height: 300px;
+  margin-top: 200px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main-headline {
+  float: left;
+  width: 400px;
+  min-height: 300px;
+  padding: 0 19px 0 0;
+  border-right: 1px solid #ddd;
+  font-size: medium;
+}
+
+#more-headlines {
+  float: right;
+  width: 250px;
+  min-height: 300px;
+  padding: 0 0 0 0px;
+  margin-right: 40px;
+  font-size: larger;
+}
+
+#sidebars {
+  float: right;
+  width: 220px;
+  min-height: 630px;
+  padding: 0 0 0 20px;
+  border-left: 1px solid #ddd;
+}
+
+#extras {
+  width: 980px;
+  height: 290px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+
+#recommended {
+  float: left;
+  width: 312px;
+  height: 290px;
+  margin: 0 20px 0 0;
+  padding: 20px 0;
+}
+
+#programs {
+  float: left;
+  width: 312px;
+  height: 290px;
+  margin: 0 10px 0 0;
+  padding: 20px 0;
+}
+
+#cartoon {
+  float: left;
+  width: 312px;
+  height: 290px;
+  margin: 0 0 0 10px;
+  padding: 20px 0;
+}
+
+
+#top ul {
+  float: right;
+  margin: 18px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#top li {
+  display: inline;
+  font-size: 0.9em;
+  line-height: 1.0em;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#top li a {
+  color: #dc0000;
+  text-decoration: none;
+}
+
+#top li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+
+#headlines h1, #headlines h2, #headlines h3, #headlines h4, #sidebars h3 {
+  font-size: 2.3em;
+  font-weight: normal;
+  line-height: 1.0em;
+  letter-spacing: -1px;
+  color: #000;
+  margin: 0 0 6px 0;
+}
+
+#headlines h2, #headlines h3, #sidebars h3 {
+  font-size: 1.7em;
+}
+
+#headlines h4 {
+  font-size: 1.3em;
+  line-height: 1.1em;
+}
+
+#headlines h3 {
+  margin: 0 0 4px 0;
+  padding: 12px 0 0 0;
+  border-top: 1px solid #ddd;
+}
+
+#headlines h1 a, #headlines h2 a, #headlines h3 a, #headlines h4 a, #sidebars h3 a {
+  color: #000;
+  text-decoration: none;
+}
+
+#headlines h1 a:hover, #headlines h2 a:hover, #headlines h3 a:hover, #headlines h4 a:hover, #sidebars h3 a:hover {
+  color: #dc0000;
+  text-decoration: underline;
+}
+
+#headlines h2.heading, #sidebars h2.heading-blue, #sidebars h2.heading {
+  font: bold 0.8em arial,verdana,tahoma,sans-serif;
+  line-height: 1.0em;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 7px 6px 6px 6px;
+  background: #dc0000;
+}
+
+#sidebars h2.heading-blue {
+  background: #2c6fae;
+}
+
+#sidebars h4 {
+  font: bold 1.0em arial,verdana,tahoma,sans-serif;
+  line-height: 1.2em;
+  margin: 0 0 9px 0;
+  padding: 5px 0 0 0;
+}
+
+#sidebars h4 a {
+  color: #dc0000;
+  text-decoration: none;
+}
+
+#sidebars h4 a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#main p, #sidebars p {
+  font-size: 1.0em;
+  line-height: 1.4em;
+  margin: 0 0 16px 0;
+}
+
+#main p.author, #sidebars p.author {
+  font: bold 0.8em arial,verdana,tahoma,sans-serif;
+  line-height: 1.0em;
+  margin: 0 0 10px 0;
+  color: #999;
+}
+
+#main p.author span, #sidebars p.author span {
+  color: #2c6fae;
+}
+
+#main p a, #sidebars p a {
+  color: #dc0000;
+  text-decoration: none;
+}
+
+#main p a:hover, #sidebars p a:hover {
+  color: #dc0000;
+  text-decoration: underline;
+  background-image: linear-gradient(#0b6b6c7c 13%, rgba(40, 46, 80, 0.7) 40%, hwb(177 3% 61%) 86%);
+}
+#sidebars{
+width: 350px;
+}
+#extras h2.heading {
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.0em;
+  letter-spacing: -1px;
+  color: #000;
+  margin: 0;
+  padding: 10px 0;
+  border-top: 4px solid #000;
+  border-bottom: 1px solid #ddd;
+}
+
+#extras ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#extras li {
+  font-size: 1.0em;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 9px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+#extras li.last {
+  padding: 6px 0 0 0;
+  border-bottom: none;
+}
+
+#extras li a {
+  color: #dc0000;
+  text-decoration: none;
+}
+
+#extras li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+
+#main-headline img {
+  margin: 0 0 6px 0;
+  border: 0;
+
+}
+#headlines {
+  margin-top: 100px; /* Add this line to reset the top margin */
+  margin-bottom: 100px; /* Keep the existing bottom margin or adjust as needed */
+
+}
+#sidebars{
+  margin-top: 100px; /* Add this line to reset the top margin */
+  margin-bottom: 100px; /* Keep the existing bottom margin or adjust as needed */
+}
+
+#main img.lefty {
+  float: left;
+  margin: 0 10px 0 0;
+  border: 0;
+}
+
+#main img.righty {
+  float: right;
+  margin: 0 0 0 10px;
+  border: 0;
+}
+
+#extras img {
+  margin: 8px 0 0 0;
+  border: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-4">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-4">
+                    <div class="logo d-flex align-items-left">
+                        <a href="www.html">
+                            <img src="logo.jpg" alt="Your Logo" class="mr-2" style="max-height: 50px;">
+                        </a>
+                        <h1 class="text-warning"></h1>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 d-flex justify-content-end">
+                    <div class="top-right d-flex align-items-center">
+                        <input type="text" placeholder="Search" class="form-control mr-2 search-bar">
+                        <body>
+                            <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                                <div class="toggle-ball"></div>
+                            </div>
+                            <script src="script.js"></script>
+                        </body>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="www.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="featured.html" class="nav-link text-white">Featured</a></li>
+                <li class="nav-item"><a href="sports.html" class="nav-link text-white">Sport</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Statistics</a></li>
+                <li class="nav-item"><a href="interesting.html" class="nav-link text-white">Interesting Facts</a></li>
+                <li class="nav-item"><a href="quiz.html" class="nav-link text-white">Quizzes</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link text-white">Upcoming Events</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Teams & Leagues</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="sub-nav">
+      
+      </ul>
+    </div>
+    
+    <div id="content-wrapper">
+      <!-- BEGIN MAIN -->
+      <div id="main">
+        <div id="headlines">
+          <div id="main-headline">
+            <h2 class="heading">Featured Story</h2>
+            <img src="img4.jpg" alt="" width="350" height="200" />
+            <h1>Bangladesh thrashed UAE by 195 runs at Dubai International Cricket Stadium on Sunday</h1>
+            <p class="author"><span style="color: blue;">Sohan</span> | <span style="color: blue;">31.12.23</span></p>
+
+
+            <p>Bangladesh thrashed UAE by 195 runs at Dubai International Cricket Stadium on Sunday</p>
+            <p><a href="tf.html">Full story &raquo;</a></p>
+            <h2>Mumbai Indians' decision to replace skipper Rohit Sharma with Hardik Pandya</h2>
+            <p class="author"><span style="color: blue;">Sohan</span> | <span style="color: blue;">31.12.23</span></p>
+
+            <img src="img5.jpg" alt="" width="350" height="200" />
+            <p>Mumbai Indians' decision to replace skipper Rohit Sharma with Hardik Pandya</p>
+            <p><a href="vr.html">Full story &raquo;</a></p>
+            
+            <h2 class="heading">Videos</h2>
+            
+            <object width="400" height="300">
+              <param name="movie" value="http://www.youtube.com/v/B0jhJA1Hjxk&amp;hl=en_US&amp;fs=1&" />
+              <param name="allowFullScreen" value="true" />
+              <param name="allowscriptaccess" value="never" />
+              <embed src="http://www.youtube.com/v/B0jhJA1Hjxk&amp;hl=en_US&fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="never" allowfullscreen="true" width="400" height="300"></embed>
+            </object>
+            <h2><a href="#"></a></h2>
+            <p class="author"><span>09.18.09</span></p>
+            <p><a href="#">More video &raquo;</a></p>
+            <h2 class="heading">Latest Article</h2>
+          </div>
+          
+          <div id="more-headlines">
+            <h2 class="heading">Featured Stories</h2>
+            <img src="img6.jpg" alt="" width="350" height="200" />
+            <h2>Longest Tennis Match</h2>
+            <p class="author"><span style="color: blue;">Sohan</span> | <span style="color: blue;">31.12.23</span></p>
+            <p>The longest tennis match in history took place at Wimbledon in 2010. John Isner and Nicolas Mahut battled for 11 hours and 5 minutes over three days.</p>
+            <p><a href="longest.html">Full article &raquo;</a></p>
+            <img src="img7.jpg" alt="" width="350" height="200" />
+            <h3>Top 3 Most Olympics Gold Medalist</h3>
+            <p class="author"><span style="color: blue;">Sohan</span> | <span style="color: blue;">31.12.23</span></p>
+            <p>
+              "Olympic Legends: Phelps, Latynina, Bolt - Dominance in Gold Medals"</p>
+            <p><a href="olympic.html">Full article &raquo;</a></p>
+            <img src="img8.jpg" alt="" width="350" height="200" />
+            <h3>Thiem survives</h3>
+            <p class="author"><span style="color: blue;">Sohan</span> | <span style="color: blue;">31.12.23</span></p>
+            <p>Thiem survives deadly venomous snake interruption, qualifies at Brisbane International</p>
+            <p><a href="#">Full article &raquo;</a></p>
+            <h2 class="heading">Podcast</h2>
+            <img src="img/microphone.png" alt="" class="righty" />
+            <h4><a href="#"></a></h4>
+            <p class="author"><span>09.18.09</span></p>
+            
+            <p><a href="#">More podcasts &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- END MAIN -->
+      <!-- BEGIN SIDEBARS -->
+      <div id="sidebars">
+      
+        <h2 class="heading-blue">JUST IN</h2>
+        <img src="img99.jpg" alt="" width="340" height="200" />
+        <h3>Salah leads Egypt</h3>
+        <p>Mohamed Salah will lead Egypt at the African Cup of Nations in the Ivory Coast, skippering a 27-man squad named by coach Rui Vitoria.</p>
+        <p><a href="#">More headlines &raquo;</a></p>
+        <h2 class="heading">TRENDING</h2>
+        <img src="img/casey.jpg" alt="" class="ad" /> <img src="img/hobo.jpg" alt="" class="ad-right" />
+        <h2 class="heading">FEEDBACK</h2>
+        
+      </div>
+      <!-- END SIDEBARS -->
+    </div>
+    <!-- END CONTENT WRAPPER-->
+    <!-- BEGIN EXTRAS -->
+    <div id="extras">
+      <div id="recommended">
+        <h2 class="heading">Recommended Stories</h2>
+        <ul>
+       
+         
+        </ul>
+      </div>
+      <div id="programs">
+        <h2 class="heading">What's On Tonight</h2>
+        <img src="img/rick.jpg" alt="" /> <img src="img/cbc.png" alt="" /> </div>
+      <div id="cartoon">
+        <h2 class="heading">Humour</h2>
+        <img src="img/cartoon.jpg" alt="" /> </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact">
+                        <h2>Contact</h2>
+                        <p>Email: xyz@gmail.com</p>
+                        <p>Phone: +88015xxxxxxx</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social">
+                        <h2>Follow Us</h2>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/ehsanulhaque.sohan/" target="_blank"><img src="https://www.freeiconspng.com/uploads/facebook-logo-3.png" alt="Facebook" class="img-fluid"></a>
+                            <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" class="img-fluid"></a>
+                            <a href="#" target="_blank"><img src="https://w7.pngwing.com/pngs/722/1011/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text-thumbnail.png" alt="Instagram" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about">
+                        <h2>About</h2>
+                        <p>DriveAway, we are more than just a sports news platform; we are a community of passionate fans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Function to toggle between dark and light mode
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+
+            // Save the current mode to local storage
+            var isDarkMode = body.classList.contains("dark-mode");
+            localStorage.setItem("darkMode", isDarkMode);
+        }
+
+        // Check local storage for the user's preferred mode on page load
+        window.onload = function () {
+            var storedDarkMode = localStorage.getItem("darkMode");
+            if (storedDarkMode === "true") {
+                document.body.classList.add("dark-mode");
+            }
+        };
+    </script>
+</body>
+
+</html>

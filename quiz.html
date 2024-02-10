@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="quiz.css">
+    <style>
+        /* Add any additional styles specific to the quiz page here */
+        .quiz-options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .quiz-options li {
+            margin-bottom: 10px;
+        }
+
+        .correct-answer {
+            display: none;
+            color: linear-gradient(#0b6b6c 13%, rgb(11, 104, 96) 40%, hwb(177 3% 61%) 86%);
+            font-weight: bold;
+        }
+
+        .incorrect-answer {
+            display: none;
+            color: #dc3535;
+            font-weight: bold;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-4">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-4">
+                    <div class="logo d-flex align-items-left">
+                        <a href="www.html">
+                            <img src="logo.jpg" alt="Your Logo" class="mr-2" style="max-height: 50px;">
+                        </a>
+                        <h1 class="text-warning"></h1>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 d-flex justify-content-end">
+                    <div class="top-right d-flex align-items-center">
+                        <input type="text" placeholder="Search" class="form-control mr-2 search-bar">
+                        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                            <div class="toggle-ball"></div>
+                        </div>
+                        <script src="script.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="www.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="featured.html" class="nav-link text-white">Featured</a></li>
+                <li class="nav-item"><a href="sports.html" class="nav-link text-white">Sport</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Statistics</a></li>
+                <li class="nav-item"><a href="interesting.html" class="nav-link text-white">Interesting Facts</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Quizzes</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link text-white">Upcoming Events</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Teams & Leagues</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container my-4">
+        <div class="quiz-container bg-dark text-white p-4">
+            <h2 class="text-center text-primary top-10-heading" style="color: #FFFF00 !important;">Quiz Section</h2>
+            
+            <!-- Sports Dropdown -->
+            <div class="sports-slider">
+                <label for="sports-select">Select a Sport:</label>
+                <select id="sports-select" onchange="changeSport()">
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="tennis">Tennis</option>
+                    <!-- Add more sports as needed -->
+                </select>
+            </div>
+
+            <!-- Quiz Question Container -->
+            <div id="quiz-questions-container">
+                <!-- Quiz questions for the selected sport will be displayed here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact">
+                        <h2>Contact</h2>
+                        <p>Email: sakibsohan848@gmail.com</p>
+                        <p>Phone: +8801521574515</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social">
+                        <h2>Follow Us</h2>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/ehsanulhaque.sohan/" target="_blank"><img src="https://www.freeiconspng.com/uploads/facebook-logo-3.png" alt="Facebook" class="img-fluid"></a>
+                            <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" class="img-fluid"></a>
+                            <a href="#" target="_blank"><img src="https://w7.pngwing.com/pngs/722/1011/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text-thumbnail.png" alt="Instagram" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about">
+                        <h2>About</h2>
+                        <p>DriveAway, we are more than just a sports news platform; we are a community of passionate fans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
